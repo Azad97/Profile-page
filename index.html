@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/0568ac9dbf.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Azda Yadav</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #f3f0f1;
+        width: 100%;
+        height: 100vh;
+        /* animation: background 10s infinite linear; */
+        background: linear-gradient(to right, #009fff, #ec2f4b);
+        position: relative;
+      }
+      .vertical-center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 70%;
+        height: 70%;
+        background-color: whitesmoke;
+        border-radius: 20px;
+        overflow: hidden;
+      }
+      @keyframes background {
+        0% {
+          background: #009fff;
+        }
+        50% {
+          background: #ec2f4b;
+        }
+        100% {
+          background: #009fff;
+        }
+      }
+      .neumorphism {
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        position: relative;
+        border-radius: 32px;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.1s ease-in-out;
+      }
+      .neumorphism span {
+        line-height: 100px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 32px;
+        font-weight: semibold;
+      }
+      .neumorphism:nth-child(all) {
+        box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
+          6px 6px 10px rgba(0, 0, 0, 0.2);
+        color: #6f6cde;
+      }
+      .neumorphism:hover {
+        background: #f3f0f1;
+        box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
+          6px 6px 10px rgba(0, 0, 0, 0.2);
+      }
+      .neumorphism:active {
+        opacity: 1;
+        box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
+          inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+        color: #3b5998;
+      }
+      .divimage {
+        width: 60%;
+        height: 100%;
+        display: inline-block;
+        background-image: url(sunset_landscape.jpg);
+        background-size: cover;
+      }
+      .divmain {
+        float: right;
+        width: 40%;
+        height: 100%;
+        display: inline-block;
+        background-color: wheat;
+      }
+      .divmain h1 {
+        font-family: "Lobster", cursive;
+        text-align: center;
+        font-size: 3.5rem;
+        margin-top: 20%;
+      }
+      .divmain h4 {
+        font-family: "Lobster", cursive;
+        text-align: right;
+        color: #887f6c;
+        padding-right: 60px;
+      }
+      .resume {
+        width: 300px;
+      }
+      @media only screen and (max-device-width: 600px) {
+        .divimage {
+          width: 100%;
+          height: 40%;
+          display: block;
+          background-image: url(sunset_landscape.jpg);
+          background-size: cover;
+        }
+        .divmain {
+          display: block;
+          width: 100%;
+          height: 60%;
+          background-color: wheat;
+        }
+        .divmain h1 {
+          font-family: "Lobster", cursive;
+          text-align: center;
+          font-size: 2.5rem;
+          margin-top: 5%;
+        }
+        .divmain h4 {
+          font-family: "Lobster", cursive;
+          text-align: right;
+          color: #887f6c;
+          padding-right: 30px;
+          font-size: 1rem;
+        }
+        .neumorphism {
+          width: 60px;
+          height: 60px;
+          display: inline-block;
+          position: relative;
+          border-radius: 15px;
+          text-align: center;
+          cursor: pointer;
+          transition: all 0.1s ease-in-out;
+        }
+        .neumorphism span {
+          line-height: 60px;
+          font-family: "Montserrat", sans-serif;
+          font-size: 32px;
+          font-weight: semibold;
+        }
+        .resume {
+          width: 200px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="vertical-center">
+      <div class="divimage"></div>
+      <div class="divmain">
+        <h1 class="h1">
+          Azad Yadav
+        </h1>
+        <h4 class="h4">
+          Full Stack Developer
+        </h4>
+        <div id="contact" style="text-align: center; margin-top: 10%;">
+          <div class="neumorphism resume">
+            <span style="font-family: 'Lobster', cursive;">
+              <a href="AKY.pdf" download="AKY" style="text-decoration: none;">
+                Resume
+              </a>
+            </span>
+          </div>
+        </div>
+        <div id="contactcontact" style="text-align: center; margin-top: 5%;">
+          <a
+            href="https://www.linkedin.com/in/azad-yadav-449bb9176/"
+            target="_blank"
+          >
+            <div class="neumorphism">
+              <span>
+                <i class="fab fa-linkedin"></i>
+              </span>
+            </div>
+          </a>
+          <a href="mailto:azad.yadav9798@gmail.com" target="_blank">
+            <div class="neumorphism">
+              <span>
+                <i class="fas fa-envelope"></i>
+              </span>
+            </div>
+          </a>
+          <a href="https://www.facebook.com/pramode.yadav/" target="_blank">
+            <div class="neumorphism">
+              <span>
+                <i class="fab fa-facebook-f"></i>
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
